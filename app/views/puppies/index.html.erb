@@ -1,0 +1,14 @@
+<h1>Bernese Puppies</h1>
+
+<ul>
+  <%= @puppys.each do |puppy|%>
+    <li><%= link_to puppy.name, "puppy/puppy.id" %></li>
+  <% end %>
+</ul>
+
+<p>
+  <%= link_to 'New puppy', "puppies/new" %>
+</p>
+
+<%= image_tag("Bodhi.JPG") %>
+
